@@ -76,7 +76,7 @@ section{
     margin-top: 70px;
 }
 p{
-margin: -82px auto 2rem auto;
+margin: -68px auto 2rem auto;
 padding: 0.5rem;
 }
 
@@ -89,7 +89,7 @@ padding: 0.5rem;
     margin-left: 9px;
     padding: 10px;
     border-radius: 10px;
-    display: table-caption;
+    display: table;
     
     
   }
