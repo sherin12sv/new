@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./style1.css">
 </head>
 <body>
     <section>    
         <div class="box">
         <div class="form">
             <h2>Tittle</h2>
-            <form>
+           <form action="" id=submit-form name=submit-form>
                 <div class="input">
                     
                     <p>Overall, how would you rate the course?</p>
@@ -129,10 +130,48 @@
                       /> <label class="r1" for="bb"><span class="t1" >NO</span></label>
                     
                 </div>
+                     <button  class="button" id=button>
+            <span class="default">Send</span>
+           
+              
+               
+            <span class="success">Sent Successfuly</span>
+          
+            <div class="left"></div>
+            <div class="right"></div>
+        </button>
             </form>
+            
         </div>
     </div>
 </section>
+
+   
+<script src="./script1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+        
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbxUZrNQw38FQvI6YPdB2v40aT38lpeXwZKRkx2XL4GDwjPiJYDa/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              
+             alert('submited Success') 
+              
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+
+    
 
 </body>
 </html>
