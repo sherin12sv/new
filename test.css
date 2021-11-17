@@ -33,8 +33,6 @@ section{
     position: relative;
     padding: 50px;
     width: 600px;
-    height: auto;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255,0.1);
@@ -81,14 +79,17 @@ p{
 margin: 0 auto 2rem auto;
 padding: 0.5rem;
 }
+
+
 .r1{
-    height: 50px;
-    width: 53px;
+    
     border: 2px solid #f91818;
     position: relative;
+    top:-43px;
     margin-left: 9px;
-    padding: 7px;
+    padding: 10px;
     border-radius: 10px;
+    display: table-caption;
     
     
   }
@@ -106,5 +107,33 @@ input:checked+label
 {
     background-color:#f91818;
     box-shadow: 0 15px 45px rgba(243, 9, 1, 0.678);
+}
+
+@media (min-width: 576px)
+{
+    p{
+        margin: 0 auto 2rem auto;
+        padding: 0.5rem;
+        }
+        .r1{
+            height: 50px;
+            width: 53px;
+            border: 2px solid #f91818;
+            position: relative;
+            margin-left: 9px;
+            padding: 7px;
+            border-radius: 10px;
+            
+            
+          }
+
+          .box .form .input{
+            position: relative;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+         
+        
 }
 
