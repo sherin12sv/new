@@ -16,13 +16,17 @@ section{
     min-height: 100vh;
       align-items: center;
     filter: hue-rotate(120deg);
-    animation: animate 10s linear infinite;
+    animation: animate 400s linear infinite;
     }
     @keyframes animate
     {
         0%
         {
             filter: hue-rotate(0deg);
+        }
+        50%
+        {
+            filter: hue-rotate(180deg);
         }
         100%
         {
