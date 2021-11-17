@@ -112,7 +112,7 @@ input:checked+label
 @media (min-width: 576px)
 {
     p{
-        margin: 0 auto 2rem auto;
+        margin: -65px auto 1rem auto;
         padding: 0.5rem;
         }
         .r1{
@@ -120,9 +120,11 @@ input:checked+label
             width: 53px;
             border: 2px solid #f91818;
             position: relative;
+            display:inline-table;
             margin-left: 9px;
             padding: 7px;
             border-radius: 10px;
+            top:-16px;
             
             
           }
